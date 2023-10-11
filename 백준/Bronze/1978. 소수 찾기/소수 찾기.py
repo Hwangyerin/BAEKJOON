@@ -5,8 +5,7 @@ for j in num_list:
     L = []
     for i in range(1,int(j**0.5)+1):
         if j%i == 0:
-            L.append(i)
-            L.append(j//i)
+            L += [i,j//i]
     if len(set(L)) == 2:
         answer += 1
 print(answer)
