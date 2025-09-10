@@ -1,6 +1,7 @@
 const input = require('fs').readFileSync('example.txt').toString().split(' ');
 
-const a = Number(input[0]), b = Number(input[1]);
+const a = Number(input[0])
+    , b = Number(input[1]);
 let result = '';
 
 if (a > b) {
